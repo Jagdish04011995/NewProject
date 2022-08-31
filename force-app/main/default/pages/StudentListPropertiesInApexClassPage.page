@@ -1,0 +1,13 @@
+<apex:page controller="StudentController1">
+    <apex:form >
+
+        
+             {!Student}<br/>
+             {!Studentlist}<br/>
+    <apex:repeat value="{!Studentlist}" var="jd">
+        {!jd}<br/>
+        </apex:repeat>
+        
+    <apex:commandButton action="{!Student}"  value="Student"/>   
+    </apex:form>
+</apex:page>

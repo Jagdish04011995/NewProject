@@ -1,0 +1,20 @@
+<apex:page standardController="Account" recordSetVar="Accounts">
+  <apex:form >
+    <apex:pageBlock >
+      <apex:pageBlockTable value="{!Accounts}" var="jd">
+          <apex:column >
+        <apex:commandLink reRender="jd1">
+          {!jd.name}
+          <apex:param name="old" value="{!jd.id}"/>
+              </apex:commandLink>
+          </apex:column>
+            
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+    <apex:pageBlock id="jd1">
+        <apex:detail subject="{!$CurrentPage.parameters.old}" relatedList="false"/>
+      </apex:pageBlock>
+    </apex:form> 
+    
+</apex:page>

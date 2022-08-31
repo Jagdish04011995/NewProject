@@ -1,0 +1,31 @@
+<apex:page standardController="Opportunity"  recordsetvar="Opportunitys">
+    <apex:form >
+     <apex:pageBlock >
+         
+             <apex:pageBlockTable value="{!Opportunitys}" var="Jd">
+            
+             <apex:column >
+             <apex:commandLink reRender="jd1">
+                 {!Jd.Name}                                        
+                
+                <apex:param name="old" value="{!Jd.id}"/>
+              </apex:commandLink>
+                 </apex:column>
+                 
+         </apex:pageBlockTable>
+        </apex:pageBlock>
+         
+         
+      <apex:pageBlock id="jd1">
+        <apex:detail subject="{!$CurrentPage.parameters.old}" relatedList="false"/>
+      </apex:pageBlock>
+        
+        <apex:pageBlock >
+        <apex:commandButton action="{!previous}" value="<<<Previous" rendered="{!Hasprevious}" />
+    
+        <apex:commandButton action="{!next}" value="Next>>>" rendered="{!Hasnext}" />
+         </apex:pageBlock>
+        
+    </apex:form>     
+    
+</apex:page>

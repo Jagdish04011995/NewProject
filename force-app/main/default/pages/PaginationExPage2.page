@@ -1,0 +1,23 @@
+<apex:page controller="Pagination2">
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockTable value="{!acclist}" var="jd">
+        <apex:column value="{!jd.name}"/>
+        <apex:column value="{!jd.website}"/>
+        <apex:column value="{!jd.annualRevenue}"/>
+        <apex:column value="{!jd.Description}"/>            
+        <apex:column value="{!jd.type}"/> 
+            
+        </apex:pageBlockTable>
+            
+        <apex:pageBlockButtons >
+         <apex:commandButton value="Previous" action="{!Previous}" disabled="{!HasPrevious}"/>
+        <apex:commandButton value="Next" action="{!Next}" disabled="{!Hasnext}"/>
+            
+        </apex:pageBlockButtons>
+            
+         Total number of recrd is-{!totalrece}
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="MessageFromEvent" type="String"/>
+    <aura:attribute name="numEvent" type="Integer" default="0"/>
+    <aura:handler event="c:ApplicationEvent"  action="{!c.handlecomponuntevent}"/>
+    
+    
+    <p>{!v.MessageFromEvent}</p>
+     <p>NumberOfEvent : {!v.numEvent}</p>
+</aura:component>

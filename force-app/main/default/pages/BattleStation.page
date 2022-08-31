@@ -1,0 +1,10 @@
+<apex:page standardController="Battle_station__c">
+    <apex:pageBlock title="Resources">
+        <apex:pageBlockTable value="{!Battle_station__c.Resources1__r}" var="jd">
+        <apex:column value="{!jd.Name}"/>
+        <apex:column value="{!jd.Utilization__c}"/>
+        <apex:column value="{!jd.Quantity__c}"/>
+        <apex:column value="{!jd.Battle_station__c}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

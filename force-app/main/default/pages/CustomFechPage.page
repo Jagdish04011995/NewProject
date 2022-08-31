@@ -1,0 +1,22 @@
+<apex:page controller="CustomFech" docType="HTML-5.0">
+    <apex:form >
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        
+<apex:input type="text" label="Name dalo Yaha Account ka" value="{!Names}"/><p>
+        
+        <apex:commandButton action="{!Methods}" value="Butten"/>
+        </p>
+        
+        <apex:pageBlockTable value="{!JDs}" var="JD">
+            <apex:column value="{!JD.ID}"/>
+            <apex:column value="{!JD.Name}"/>
+            
+        
+        </apex:pageBlockTable>
+        
+        
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>    
+</apex:page>

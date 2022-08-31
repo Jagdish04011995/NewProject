@@ -1,0 +1,6 @@
+<aura:component  >
+    <aura:registerEvent name="appEvent" type="c:ApplicationEvent" />
+    <h1>Simple Heading Of Event Notifire Component ApplicationEvent</h1>
+    <p> <lightning:button label="Buttont Of Component" onclick="{!c.FireComponentEvent}" />
+    </p>
+</aura:component>

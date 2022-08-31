@@ -1,0 +1,7 @@
+<apex:page standardController="Account"  extensions="ExtTwo,Extone">
+    {!hh}<p/>
+    {!ss}<p/>
+    
+    <apex:outputText value="{!hh}"> </apex:outputText><p/>
+    <apex:outputText value="{!ss}"> </apex:outputText><p/>
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page controller="DemoController1">
+    <apex:form >
+    <apex:pageBlock >
+        {!JD}
+        {!Student}
+        
+        
+        <apex:commandButton action="{!Method}" value="Button"/>
+        
+    </apex:pageBlock>
+    </apex:form>
+    
+    
+    
+</apex:page>

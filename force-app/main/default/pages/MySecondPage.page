@@ -1,0 +1,29 @@
+<apex:page controller="ControllerPassparamNew">
+ 
+      <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockTable value="{!acclist}" var="jd">
+        <apex:column value="{!jd.name}"/>
+        <apex:column value="{!jd.website}"/>
+        <apex:column value="{!jd.annualRevenue}"/>
+        <apex:column value="{!jd.Description}"/>            
+        <apex:column value="{!jd.type}"/> 
+            
+         </apex:pageBlockTable>
+            
+         <apex:pageBlockButtons >
+         <apex:commandButton value="Previous" action="{!Previous}" />
+         <apex:commandButton value="Next" action="{!Next}"/>
+            
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+        </apex:form>
+    
+        <h>
+         {!account.name}
+        </h>
+   
+    <apex:detail />
+    
+    
+</apex:page>

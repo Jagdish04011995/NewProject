@@ -1,0 +1,23 @@
+<apex:page standardController="Account" renderAs="pdf" applyBodyTag="false">
+    <head>
+        
+        <style>
+            body{ Font-Family:'French Script MT';}
+           .jagdish{ font bold 30px;color:red;}
+        </style>
+    </head>
+    <body>
+        
+        <center>
+            
+            <h1>
+                New Account Name
+            </h1>
+            
+            <apex:panelGrid columns="1" width="100%"> </apex:panelGrid>
+             <apex:outputText value="{!Account.Name}" styleClass="jagdish"></apex:outputText>
+             <apex:outputText value="{!NOW()}" styleClass="jagdish"></apex:outputText>
+            
+        </center>
+    </body>
+</apex:page>

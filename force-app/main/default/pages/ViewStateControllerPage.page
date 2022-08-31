@@ -1,0 +1,13 @@
+<apex:page controller="ViewStateController">
+    <apex:form >
+    <apex:pageBlock >
+        <h>
+             {!a}
+            {!opp}
+           <apex:commandButton value="change data" action="{!changedata}"/>
+    
+   
+        </h>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

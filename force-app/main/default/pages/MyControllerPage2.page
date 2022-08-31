@@ -1,0 +1,4 @@
+<apex:page controller="MyController">
+    <apex:detail />
+   {!jagdish.id}<p/> {!jagdish.site}<p/>{!jagdish.accountNumber}<p/>{!jagdish.phone}
+</apex:page>

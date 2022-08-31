@@ -1,0 +1,20 @@
+<apex:page >
+    <h1>
+        Name Of User {!$User.FirstName} <p>
+        {!$User.LastName}</p> 
+        <p>
+        
+        {!$User.Id}         
+        </p> 
+        
+                <p>
+                {!$User.Email} 
+        </p>
+                    
+        <p>
+            {!$User.Phone}
+    
+        </p>
+                
+    </h1>
+</apex:page>

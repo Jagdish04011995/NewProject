@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <lightning-input
+        type="number"
+        label="number of employss"
+        value={NumberOfEmploys}
+        onchange={jagdish}>
+    </lightning-input>
+    <lightning-button
+    label="ResetButten"
+    onclick={reset}>
+</lightning-button>
+<template if:true={accounts.data}> 
+    <template for:each={accounts.data} for:item="jd">
+        <p key={jd.id}>{jd.Name}</p>
+    </template>
+</template>
+    </lightning-card>
+</template>

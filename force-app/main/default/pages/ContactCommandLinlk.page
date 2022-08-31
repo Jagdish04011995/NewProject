@@ -1,0 +1,33 @@
+<apex:page standardController="Contact" recordSetVar="Contacts">
+    
+    <apex:form >
+    <apex:pageBlock title="Contact List With HyperLink">
+        
+          <apex:pageBlockTable value="{!Contacts}" var="JD">
+           <apex:column >
+            
+               <apex:commandLink reRender="ASD">
+               {!JD.Name}
+               <apex:param name="DSA" value="{!JD.ID}"/>
+               </apex:commandLink>
+               
+              </apex:column>
+        </apex:pageBlockTable> 
+        </apex:pageBlock>
+        
+        
+        <apex:pageBlock id="ASD">
+        <apex:detail subject="{!$CurrentPage.Parameters.DSA}"/>
+        </apex:pageBlock>
+        
+        
+        <apex:pageBlock >
+        
+        <apex:commandButton action="{!Previous}" value="<<Previous" rendered="{!HasPrevious}"/>
+        <apex:commandButton action="{!Next}" value="Next>>" rendered="{!HasNext}"/>
+        
+        </apex:pageBlock>
+        
+
+    </apex:form>
+</apex:page>

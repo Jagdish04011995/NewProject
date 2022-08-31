@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="FinalClassAura" access="global" >
+<h1>jdndcdci</h1>
+    
+    <aura:handler name="init" action="{!c.myAction}" value="{!this}"/>
+    <aura:attribute name="ContactList" type="List" />
+    <aura:attribute name="name" type="string" />
+    Hello {!v.name}
+    
+    <aura:iteration items="{!v.ContactList}" var="contact">
+        <div>
+        <lightning:formattedText value="{!contact.FirstName}"/>
+     <lightning:formattedText value="{!contact.LastName}"/>
+     <lightning:formattedText value="{!contact.Email}"/>
+            <lightning:formattedText value="{!contact.AccountId}"/>
+    </div>
+    </aura:iteration>
+</aura:component>

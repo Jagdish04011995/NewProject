@@ -1,0 +1,10 @@
+<apex:page >
+    <h1>
+        Congratulation  
+    </h1>
+    
+    <P>
+      Globle wala {!$User.Email}  
+    </P>
+    
+</apex:page>

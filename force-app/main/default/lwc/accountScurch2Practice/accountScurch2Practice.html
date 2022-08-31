@@ -1,0 +1,24 @@
+<template>
+    <lightning-card>
+     <lightning-input
+     type="Number"
+     label="Number Of Emplyss"
+     value={Variablesss}
+     onchange={HandleChange}>
+    </lightning-input>
+
+    <lightning-button
+    label="Button"
+    onclick={Resets}>
+    </lightning-button>
+    
+     
+   <template for:each={Accounts.data} for:item="JD">
+    <p key ={JD.id}>
+        {JD.Name}
+    </p>
+   
+   </template>
+
+    </lightning-card>
+</template>

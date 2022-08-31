@@ -1,0 +1,21 @@
+<apex:page controller="Classfatch">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        <apex:inputField value="{!Datas.Name}"/>
+        <apex:commandButton action="{!fech}" value="Butten"/>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockTable value="{!Acc}" var="KK">
+        <apex:column value="{!KK.Id}"/>
+        <apex:column value="{!KK.Name}"/>
+        <apex:column value="{!KK.Phone}"/>
+        
+        </apex:pageBlockTable>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+    
+    
+</apex:page>

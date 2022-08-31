@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <c:FourthChildComponent aura:id="comB" passingparam="Hello Child From Parent"/>
+    <lightning:button label="Call child Method" onclick="{!c.onAction}"/>
+</aura:component>

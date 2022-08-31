@@ -1,0 +1,10 @@
+<apex:page standardController="Contact">
+    <apex:form >
+    <apex:pageBlock title="Contact Details">
+        <apex:inputField label="cdcdsc" value="{!Contact.LastName}"/>
+          <apex:inputField value="{!Contact.phone}"/>
+         <apex:inputField value="{!Contact.email}"/>
+    <apex:commandButton action="{!save}" value="Save"/>
+    </apex:pageBlock>
+          </apex:form>
+</apex:page>

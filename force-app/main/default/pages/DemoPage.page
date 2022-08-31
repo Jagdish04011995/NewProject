@@ -1,0 +1,9 @@
+<apex:page controller="Demo">
+    <apex:form >
+        
+<apex:outputPanel id="Studentdetails">
+        {!jj}
+        
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

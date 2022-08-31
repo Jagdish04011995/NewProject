@@ -1,0 +1,7 @@
+<apex:page controller="StudentControlerOnathrWay">
+    <apex:form >
+       
+<apex:commandButton action="{!jd}" value="mySwitchd"/>        
+      {!jd}
+    </apex:form>
+</apex:page>

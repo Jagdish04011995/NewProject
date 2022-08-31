@@ -1,0 +1,7 @@
+<apex:page standardController="Contact" extensions="DetailButtenExtentionController">
+    
+    <apex:form >
+    <apex:commandButton action="{!Jagdish}" value="Buttan"/>
+    {!Jagdish}
+    </apex:form>
+</apex:page>

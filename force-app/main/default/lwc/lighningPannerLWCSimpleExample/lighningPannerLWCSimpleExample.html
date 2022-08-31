@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+    <lightning-button label="toggle" variant="brand" onclick={handleClick}></lightning-button>
+    <div class="slds-m-around_large">
+        <p if:true={isloaded}>connect has been loaded.></p>
+        <div if:false={isloaded} class="slds-is-relative">
+            <lightning-spinner
+            alternative-text="loading......." variant="brand"></lightning-spinner>
+        </div>
+    </div>
+</lightning-card>
+</template>

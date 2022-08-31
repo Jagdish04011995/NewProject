@@ -1,0 +1,9 @@
+<apex:page controller="MyController">
+    <apex:form >
+    <apex:inputField value="{!jagdish.name}"/>
+        
+       
+        <apex:commandButton action="{!Save}" value="updatekarbe"/>
+          
+    </apex:form>
+</apex:page>

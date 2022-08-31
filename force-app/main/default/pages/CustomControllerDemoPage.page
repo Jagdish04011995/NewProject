@@ -1,0 +1,9 @@
+<apex:page controller="DemoClass">
+    <h1>
+        <apex:pageBlock title="Name print in block">
+            <apex:pageBlockSection title="Name print in section">
+        {!name}
+            </apex:pageBlockSection>
+         </apex:pageBlock>  
+    </h1>
+</apex:page>

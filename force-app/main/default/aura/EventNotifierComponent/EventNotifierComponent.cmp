@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:registerEvent name="cmpEvent" type="c:Jagdish" />
+    <h1>Simple Heading Of Event Notifire Component</h1>
+    <p> <lightning:button label="Buttont Of Component" onclick="{!c.FireComponentEvent}" />
+    </p>
+</aura:component>

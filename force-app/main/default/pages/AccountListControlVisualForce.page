@@ -1,0 +1,12 @@
+<apex:page controller="AccountListControlVisualForce">
+    <apex:pageBlock >
+        <apex:form >
+    <apex:inputText value="{!dahake}"/>
+          <apex:commandButton action="{!jd}" value="NumberOfEmployees"/>
+          <apex:pageBlockTable value="{!jagdish}" var="jj">
+            <apex:column value="{!jj.name}"/>
+        
+        </apex:pageBlockTable>
+            </apex:form>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="DahakeLight" access="global" >
+	<h1>
+    Hello compoent
+    </h1>
+    <aura:handler name="init" action="{!c.myAction}" value="{!this}"/>
+    <aura:attribute type="List" name="contactList" />
+    <aura:attribute type="String" name="name"/>
+    Helo {!v.name}
+    <aura:iteration items="{!v.contactList}" var="con">
+        <div>
+        <lightning:formattedText value="{!con.FirstName}"/>
+    </div>
+        <br/>
+    </aura:iteration>
+</aura:component>

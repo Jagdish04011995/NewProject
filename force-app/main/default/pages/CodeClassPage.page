@@ -1,0 +1,25 @@
+<apex:page controller="CodeClass">
+     <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockTable value="{!acclist}" var="jd">
+          <apex:column >
+        <apex:commandLink reRender="jd1">
+          {!jd.name}
+          <apex:param name="old" value="{!jd.id}"/>
+              </apex:commandLink>
+          </apex:column>
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+         
+         
+    <apex:pageBlock id="jd1">
+        <apex:detail subject="{!$CurrentPage.parameters.old}" relatedList="false"/>
+      
+         <apex:pageBlockButtons >
+         <apex:commandButton value="Previous" action="{!Previous}" />
+         <apex:commandButton value="Next" action="{!Next}"/>
+            
+        </apex:pageBlockButtons>
+       </apex:pageBlock>
+       </apex:form> 
+</apex:page>

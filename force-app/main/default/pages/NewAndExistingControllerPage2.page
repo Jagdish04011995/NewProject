@@ -1,0 +1,18 @@
+<apex:page controller="NewAndExistingController2" tabStyle="Contact">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageMessages />
+      
+       <apex:pageBlockSection >
+        <apex:inputField value="{!Contact.LastName}"/>
+        <apex:inputField value="{!Contact.phone}"/>
+           
+       
+        </apex:pageBlockSection>    
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="!save"  action="{!save}"/>
+        
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>
